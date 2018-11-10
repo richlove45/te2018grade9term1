@@ -17,16 +17,41 @@ player.name = READLINE.question("What is your name?: ");
 console.log(`${player.name} stands in front of a spooky haunted house.`);
 console.log(`${player.name} hears what sounds like screaming coming from inside the house.`);
 let enterHouse = READLINE.question("Will you enter the house? (yes or no) ");
-if(enterHouse == "y" || enterHouse == "yes") {
+
+
+
+if(enterHouse == "y" || enterHouse == "yes"){
   player.courage++;
   console.log(`${player.name} prepares their ${player.weapon} and opens the door...`);
   // continue the story
-  console.log()
+  console.log();
 
-} else {
-  player.intellect++;
-  console.log(`${player.name} decides not to open the door. However...`);
+  console.log ("see a dead body..")
+  let investigation = READLINE.question(" do you want to investigate (yes or no)");
+
+  if(investigation=="yes"){
+  console.log(`${player.name} investigates the body`);
+  console.log(`${player.name} Finds the cause of death`);
+  let chase = READLINE.question("Will you chase the killer? (yes or no)");
+  if (chase = "yes" )
+    
+
+
+
+
+    }
+  
+  }
+
+  else {
+  player.courage --;
+  console.log(`${player.name} decides not to open the door. However...
+  dont look behind you`);
+  console.log ("game ends..")
+
+  }
+
   // continue the story
-
-}
+  
+  
 console.log("Thanks for playing!");
