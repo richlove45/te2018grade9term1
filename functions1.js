@@ -2,16 +2,36 @@ const READLINE = require("readline-sync");
 
 // **** Problem 1: printMessage() ****
 // Write a function that prints any message you want.
+let message = function (){
+	console.log("")
 
+}
+message();
 
 // **** Problem 2: printFiveMessages() ****
 // Write a function that calls printMessage() five times.
+let printFiveMessages = function(){
 
+printMessage();
 
+printMessage();
+
+printMessage();
+
+printMessage();
+
+printMessage();
+	
+}
 // **** Problem 3: getUserInput() ****
 // Write a function that asks the user if they'd like to print your message
 // once or five times. Then call one of the two functions above based on
 // what the user decides.
+let getUserInput = function()
+ console.log("Would you like to pint your message one or five times");
+ if (once= "yes"){
+ 	
+ }
 
 
 // **** Problem 4: printGreeting() ****
