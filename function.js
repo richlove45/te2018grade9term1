@@ -11,7 +11,15 @@ let dog = {
 	},
 	sayName: function(){
 		console.log (`My name is ${this.name}!`);
-		
-	}
-}
-dog.sayName();
+		},
+		eat: function (food) {
+			if (food === "chicken"){
+				console.log ("tasty");
+			}
+			else {
+				console.log(`Pass! ${this.name} doesn't eat ${food}s!`)
+			}
+		}
+    }
+
+    
